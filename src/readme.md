@@ -1,10 +1,12 @@
 Angular2 routing
 ================
 
-Step: Initial
+Step: s1e1-param
 -------------
 
-Currently we have 2 routes and 2 corresponding components:
-**HomeComponent** and **AboutComponent**
+Currently we have 3 routes and 3 corresponding components:
+**HomeComponent**, **AboutComponent** and **ParamComponent**
+Lets check how urls are structured and understood by the router.
+
 
 
