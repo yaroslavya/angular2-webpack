@@ -1,9 +1,10 @@
 Angular2 routing
 ================
 
-Currently we have 3 routes and 3 corresponding components:
-**HomeComponent**, **AboutComponent** and **ParamComponent**
+Step: Initial
+-------------
 
-Lets check how to add parameters to the routes. 
-Lets add an activated route and try examine it.
+Currently we have 2 routes and 2 corresponding components:
+**HomeComponent** and **AboutComponent**
+
 
