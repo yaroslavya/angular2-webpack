@@ -9,5 +9,6 @@ import '@angular/router';
 import 'rxjs';
 import '@angularclass/hmr';
 
+//let vis = require("./public/vis.js");
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...

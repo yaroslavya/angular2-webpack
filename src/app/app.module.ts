@@ -10,6 +10,7 @@ import { ApiService } from './shared';
 import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
+import { ParamComponent } from './param/param.component';
 
 @NgModule({
   imports: [
@@ -21,8 +22,9 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
-  ],
+    AboutComponent    ,
+    ParamComponent
+],
   providers: [
     ApiService
   ],
