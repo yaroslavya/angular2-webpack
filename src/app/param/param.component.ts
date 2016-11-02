@@ -28,23 +28,15 @@ export class ParamComponent implements OnInit {
     let edgeArr = [];
     let index = 1;
     segments.forEach( (segment:UrlSegment) => {
-      nodeArr.push({id:index, label:segment.path, isSegment:true});
+      nodeArr.push({id:index, label:segment.path, group:0, isSegment:true});
       let parentSegmentId = index;
       index++;      
       for(var key in segment.parameters) {
-        nodeArr.push({id:index++, label:`${key}=${segment.parameters[key]}`, parentId:parentSegmentId});
+        nodeArr.push({id:index++, label:`${key}=${segment.parameters[key]}`, group:1, parentId:parentSegmentId});
       }
     });    
 
-    let nodes = new vis.DataSet([...nodeArr]);
-
-    // let nodes = new vis.DataSet([
-    //   {id: 1, label: 'Node 1'},
-    //   {id: 2, label: 'Node 2'},
-    //   {id: 3, label: 'Node 3'},
-    //   {id: 4, label: 'Node 4'},
-    //   {id: 5, label: 'Node 5'}
-    // ]);
+    let nodes = new vis.DataSet([...nodeArr]);    
     
     let filtered = nodeArr.filter(x => x.isSegment);
 
@@ -61,13 +53,7 @@ export class ParamComponent implements OnInit {
       edgeArr.push({from: params[i].id, to:params[i].parentId});
     }
 
-    let edges = new vis.DataSet([...edgeArr]);
-    // let edges = new vis.DataSet([
-    //   {from: 1, to: 3},
-    //   {from: 1, to: 2},
-    //   {from: 2, to: 4},
-    //   {from: 2, to: 5}
-    // ]);
+    let edges = new vis.DataSet([...edgeArr]);    
 
     // create a network
     let container = document.getElementById('segments');
