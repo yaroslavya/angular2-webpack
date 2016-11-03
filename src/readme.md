@@ -1,16 +1,13 @@
 Angular2 routing
 ================
 
-Step: s1e4-url-matching
+Step: s1e6-url-matching-all-matcher
 -------------
 
-Currently we have 3 routes and 3 corresponding components:
-**HomeComponent**, **AboutComponent** and **ParamComponent**
-Lets check how urls are matched by the router.
-1. The exact url is matched if its specified by the route.
-2. if you specify a parameter, then you should start with a colon symbol ":", like :anything
-3. whatever you put in the place of a placeholder will match, except for the empty string
-4. routes are interpreted in the order of appearance, specificity doesnt matter.
+What if we have something that doesnt match any route? We will land in a default page
+
+How do we catch the not found url and redirect the user to some page not found page?
+
 
 
 
