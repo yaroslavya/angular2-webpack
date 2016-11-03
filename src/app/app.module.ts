@@ -12,6 +12,7 @@ import { routing } from './app.routing';
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 import { ParamComponent } from './param/param.component';
 import { ChildComponent } from './param/child.component';
+import { SpecificComponent } from './param/specific.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ChildComponent } from './param/child.component';
     HomeComponent,
     AboutComponent,
     ParamComponent,
-    ChildComponent
+    ChildComponent,
+    SpecificComponent
 ],
   providers: [
     ApiService
