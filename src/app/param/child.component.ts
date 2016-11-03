@@ -1,4 +1,5 @@
-import { ActivatedRoute, UrlSegment } from '@angular/router';
+import { ActivatedRoute, UrlSegment, Params } from '@angular/router';
+import { BehaviorSubject } from "rxjs";
 import { Component, OnInit } from '@angular/core'; 
 
 @Component({
@@ -10,9 +11,8 @@ export class ChildComponent {
   private _segments: UrlSegment[] = [];
 
   constructor(route: ActivatedRoute) {     
-    route.url.forEach( (segments: UrlSegment[]) =>{
-        console.info("child segment: ", segments);
+    route.url.forEach( (segments: UrlSegment[]) =>{    
         this._segments = segments;
-    });
+    });                
   }
 }
