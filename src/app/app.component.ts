@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { ApiService } from './shared';
+import { ApiService } from "./shared";
+import { URLS } from "./app.routing";
 
 import '../style/app.scss';
 
@@ -11,7 +12,8 @@ import '../style/app.scss';
 })
 export class AppComponent {
   url = 'https://github.com/preboot/angular2-webpack';
-
+  urls = URLS;
+  
   constructor(private api: ApiService) {
     // Do something with api
   }

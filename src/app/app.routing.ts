@@ -5,15 +5,23 @@ import {AboutComponent} from "./about/about.component";
 import {ParamComponent} from "./param/param.component";
 import {ChildComponent} from "./param/child.component";
 
+let urls = {
+  empty: "", 
+  about: "about",
+  param: "param-is/:parent",
+  child: "i-am-child"
+};
+
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "about", component: AboutComponent },
-  { path: "param/with/multiple/segments", component: ParamComponent,
+  { path: urls.about, component: AboutComponent },
+  { path: urls.param, component: ParamComponent,
     children:[
       { path: "", component: ChildComponent },
-      { path: "and/other", component: ChildComponent }
+      { path: urls.child, component: ChildComponent }
     ]
-  }
+  }  
 ];
 
 export const routing = RouterModule.forRoot(routes);
+export const URLS = urls;
