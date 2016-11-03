@@ -1,7 +1,7 @@
 Angular2 routing
 ================
 
-Step: s1e4-url-matching
+Step: s1e5-url-matching-specificity
 -------------
 
 Currently we have 3 routes and 3 corresponding components:
