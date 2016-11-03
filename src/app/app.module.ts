@@ -13,6 +13,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 import { ParamComponent } from './param/param.component';
 import { ChildComponent } from './param/child.component';
 import { SpecificComponent } from './param/specific.component';
+import { NotFoundComponent } from "./param/not-found.component";
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { SpecificComponent } from './param/specific.component';
     AboutComponent,
     ParamComponent,
     ChildComponent,
-    SpecificComponent
+    SpecificComponent,
+    NotFoundComponent
 ],
   providers: [
     ApiService
