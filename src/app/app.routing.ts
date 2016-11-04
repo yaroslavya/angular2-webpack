@@ -21,9 +21,9 @@ const routes: Routes = [
   { path: "page-not-found", component: NotFoundComponent },
   { path: urls.about, component: AboutComponent },
   { path: "param-is/specific-route", component: SpecificComponent},
-  { path: urls.param, component: ParamComponent,
+  { path: urls.param,
     children:[
-      { path: "", component: ChildComponent },
+      { path: "", component: ParamComponent },
       { path: urls.child, component: ChildComponent }
     ]
   }    
