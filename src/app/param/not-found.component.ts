@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent {  
 
-  constructor(route: ActivatedRoute) {  
-    console.info("AAA the requested url is: ", route.url.getValue());   
+  constructor(route: ActivatedRoute) {      
     console.info("Not found component");
   }
 }

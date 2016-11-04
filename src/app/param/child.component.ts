@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   template: `Im a child`,  
 })
 export class ChildComponent {
-
-  private _segments: UrlSegment[] = [];
-
   constructor(route: ActivatedRoute) {     
     
   }
